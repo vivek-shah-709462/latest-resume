@@ -14,20 +14,30 @@
         border: none;
         border-radius: 5px;
         cursor: pointer;
+        display: block;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;  /* Stack buttons vertically */
+        justify-content: center; /* Center vertically */
+        align-items: center;     /* Center horizontally */
+        height: 100vh;           /* Full height of the viewport */
     }
     </style>
 </head>
 <body style="font-family: Arial, sans-serif; text-align: center; margin: 50px;">
     <h1>Mr. Vivek Shah - Sr. FullStack Engineer</h1>
-    <a target="_blank" tabindex=0 rel="noopener noreferrer nofollow" href="VivekShah_CoverLetter.pdf" download>
-        <button autofocus class="download_btn cover-letter">
-            Download Cover Letter
-        </button>
-    </a>
-    <a target="_blank" tabindex=0 rel="noopener noreferrer nofollow" href="VivekShah_Resume.pdf" download>
-        <button autofocus class="download_btn resume-cv">
-            Download Resume
-        </button>
-    </a>
+    <div class="container">
+        <a target="_blank" tabindex=0 rel="noopener noreferrer nofollow" href="VivekShah_CoverLetter.pdf" download>
+            <button autofocus class="download_btn cover-letter">
+                Download Cover Letter
+            </button>
+        </a>
+        <a target="_blank" tabindex=0 rel="noopener noreferrer nofollow" href="VivekShah_Resume.pdf" download>
+            <button autofocus class="download_btn resume-cv">
+                Download Resume
+            </button>
+        </a>
+    </div>
 </body>
 </html>
